@@ -2,6 +2,9 @@
 
 A simple BookView implemented in SwiftUI.
 
+![](https://repository-images.githubusercontent.com/248848709/75dce300-6afa-11ea-87f0-4c1d4d4ceeb0)
+
+
 ## Usage
 
 A `BookView` takes an array of `Identifiable`  along with a builder that produces a `View`.
