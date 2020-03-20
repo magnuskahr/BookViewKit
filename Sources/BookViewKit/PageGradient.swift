@@ -10,7 +10,11 @@ import SwiftUI
 
 public struct PageGradient: View {
     
-    public let placement: Placement
+    let placement: Placement
+    
+    public init(placement: Placement) {
+        self.placement = placement
+    }
     
     public var body: some View {
         LinearGradient (
