@@ -26,6 +26,8 @@ let book = BookView(content: quotes) { data in
 }
 ```
 
+> If an uneven number of content is provided, the last two pages will be the same
+
 A basic gradient is also provided for the pages:
 ```
 let book = BookView(content: quotes) { data in
@@ -38,4 +40,5 @@ let book = BookView(content: quotes) { data in
     }
 }
 ```
+
 
