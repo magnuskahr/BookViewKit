@@ -17,8 +17,8 @@ extension Array {
 }
 
 public struct PageData<Content: Identifiable> {
-    let content: Content
-    let placement: Placement
+    public let content: Content
+    public let placement: Placement
 }
 
 public enum Placement {
@@ -50,7 +50,7 @@ public struct BookView<Content: Identifiable, PageContent: View>: View {
         self.content = pairs
     }
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             ForEach((0..<content.count).reversed(), id: \.self) { index in
                 RotatingPage(front: self.pageA(for: index), back: self.pageB(for: index)) { side in

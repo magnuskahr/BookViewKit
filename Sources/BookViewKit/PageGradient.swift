@@ -12,7 +12,7 @@ public struct PageGradient: View {
     
     public let placement: Placement
     
-    var body: some View {
+    public var body: some View {
         LinearGradient (
             gradient: Gradient(colors: [.clear, .white]),
             startPoint: placement == .left ? .trailing : .leading,
