@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct PageGradient: View {
+public struct PageGradient: View {
     
-    let placement: Placement
+    public let placement: Placement
     
     var body: some View {
         LinearGradient (

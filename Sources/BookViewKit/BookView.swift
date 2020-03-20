@@ -16,19 +16,19 @@ extension Array {
     }
 }
 
-struct PageData<Content: Identifiable> {
+public struct PageData<Content: Identifiable> {
     let content: Content
     let placement: Placement
 }
 
-enum Placement {
+public enum Placement {
     case front
     case left
     case right
     case back
 }
 
-struct BookView<Content: Identifiable, PageContent: View>: View {
+public struct BookView<Content: Identifiable, PageContent: View>: View {
     
     private typealias DoublePageContent = (a: Content, b: Content)
     
@@ -37,7 +37,7 @@ struct BookView<Content: Identifiable, PageContent: View>: View {
     
     @State private var highlight = 0
     
-    init(content: [Content], @ViewBuilder pageBuilder: @escaping (PageData<Content>) -> PageContent) {
+    public init(content: [Content], @ViewBuilder pageBuilder: @escaping (PageData<Content>) -> PageContent) {
         self.builder = pageBuilder
         var pairs = [DoublePageContent]()
         for chunk in content.chunked(into: 2) {
